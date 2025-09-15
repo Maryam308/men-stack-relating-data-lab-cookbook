@@ -1,0 +1,48 @@
+nav {
+  width: 100%;
+  background: #007bff;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+nav a.active {
+  background: #0056b3;
+}
+
+nav a.sign-out {
+  background: #dc3545;
+}
+
+nav a.sign-out:hover {
+  background: #a71d2a;
+}
+
+nav a.sign-in,
+nav a.sign-up {
+  background: #28a745;
+}
+
+nav a.sign-in:hover,
+nav a.sign-up:hover {
+  background: #1e7e34;
+}
