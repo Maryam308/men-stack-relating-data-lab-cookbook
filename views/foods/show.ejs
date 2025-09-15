@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Food Details</title>
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Food Details</h1>
+    <p><strong>Name:</strong> <%= food.name %></p>
+    <a href="/users/<%= user._id %>/foods">Back to Pantry</a>
+    <a href="/users/<%= user._id %>/foods/<%= food._id %>/edit">Edit</a>
+    <form
+      action="/users/<%= user._id %>/foods/<%= food._id %>?_method=DELETE"
+      method="POST"
+      style="display: inline"
+    >
+      <button type="submit">Delete</button>
+    </form>
+  </body>
+</html>
